@@ -1,0 +1,133 @@
+@import '../../styles/_variables.scss';
+
+.shop-list-container{
+  margin-top: 10px;
+  background: #fff;
+}
+
+.shop-list-header{
+  padding-left: 15px;
+  font-size: 13px;
+  color: #999;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #eee;
+
+  .tag{
+    margin-left: 8px;
+  }
+}
+
+.shop-container {
+  border-bottom: 1px solid #eee;
+  padding: 15px 10px;
+}
+
+.shop-item-block-left {
+  float: left;
+
+  img{
+    width: 60px;
+    height: 60px;
+    border-radius: 2px;
+    display: block;
+  }
+}
+
+.shop-item-block-right{
+  margin-left: 70px;
+}
+
+%shop-item-common{
+  height: 22px;
+  line-height: 20px;
+  width: 100%;
+  font-size: 11px;
+}
+
+.shop-item-line1{
+  @extend %shop-item-common;
+
+  .brand{
+    background: #ffd930;
+    color: #52250a;
+    font-size: 11px;
+  }
+
+  .title{
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 8px;
+  }
+
+  .shop-icon{
+    color: rgb(153, 153, 153);
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 11px;
+    border-radius: 1px;
+  }
+}
+
+.shop-item-line2{
+  @extend %shop-item-common;
+
+  .stars{
+    color: #ff6000;
+  }
+
+  .rate{
+    color: #ff6000;
+    margin-left: 5px;
+  }
+
+  .sales {
+    color: #666;
+  }
+
+  .shop-icon2{
+    color: #fff;
+    background: $primary-color;
+    border-radius: 1px;
+    padding: 2px;
+  }
+
+  .shop-icon3{
+    background: #fff;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 1px;
+    margin-left: 4px;
+    padding: 2px;
+  }
+}
+
+.shop-item-line3{
+  @extend %shop-item-common;
+
+  .fee{
+    color: #666;
+  }
+
+  .line-right {
+    color: #999;
+  }
+
+  .timer {
+    color: $primary-color;
+  }
+}
+
+.line-left {
+  float: left;
+  text-align: left;
+  max-width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.line-right {
+  float: right;
+  text-align: right;
+}

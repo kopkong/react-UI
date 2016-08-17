@@ -1,0 +1,25 @@
+.app-nav{
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.app-nav-item {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+
+.app-nav-item-img {
+  border: 0;
+  width: 45px;
+  height: 45px;
+  margin: 11px auto 0;
+  display: block;
+}
+
+.app-nav-item-title {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin: 5px auto 0;
+}
